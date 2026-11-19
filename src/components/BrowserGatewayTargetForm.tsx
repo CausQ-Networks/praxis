@@ -218,7 +218,7 @@ export function BrowserGatewayTargetForm<T extends FieldValues>(
                     <a
                         href={
                             props.learnMoreHref ??
-                            "https://docs.praxis.causq.com/manage/resources/private/multi-site-routing"
+                            "https://docs-praxis.causq.com/manage/resources/private/multi-site-routing"
                         }
                         target="_blank"
                         rel="noopener noreferrer"

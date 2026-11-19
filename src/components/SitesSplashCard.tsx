@@ -62,7 +62,7 @@ export const SitesSplashCard = () => {
 
                     <div className="mt-4">
                         <Link
-                            href="https://docs.praxis.causq.com/manage/sites/install-site"
+                            href="https://docs-praxis.causq.com/manage/sites/install-site"
                             target="_blank"
                             rel="noopener noreferrer"
                         >

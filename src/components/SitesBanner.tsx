@@ -19,7 +19,7 @@ export const SitesBanner = () => {
             description={t("sitesBannerDescription")}
         >
             <Link
-                href="https://docs.praxis.causq.com/manage/sites/install-site"
+                href="https://docs-praxis.causq.com/manage/sites/install-site"
                 target="_blank"
                 rel="noopener noreferrer"
             >

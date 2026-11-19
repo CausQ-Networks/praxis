@@ -10,7 +10,7 @@ export function PrivateResourceMultiSiteRoutingHelp() {
         <p className="text-sm text-muted-foreground mt-2">
             {t("internalResourceFormMultiSiteRoutingHelp")}{" "}
             <a
-                href="https://docs.praxis.causq.com/manage/resources/private/multi-site-routing"
+                href="https://docs-praxis.causq.com/manage/resources/private/multi-site-routing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:underline inline-flex items-center gap-1"

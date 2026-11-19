@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const SESSION_REVALIDATION_DOCS_URL =
-    "https://docs.praxis.causq.com/manage/identity-providers/session-revalidation";
+    "https://docs-praxis.causq.com/manage/identity-providers/session-revalidation";
 
 type IdpSessionRevalidationDescriptionProps = {
     className?: string;

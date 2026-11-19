@@ -462,7 +462,7 @@ WantedBy=default.target`
                             {t.rich("siteInstallKubernetesDocsDescription", {
                                 docsLink: (chunks) => (
                                     <a
-                                        href="https://docs.praxis.causq.com/manage/sites/install-kubernetes"
+                                        href="https://docs-praxis.causq.com/manage/sites/install-kubernetes"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-primary hover:underline inline-flex items-center gap-1"
@@ -479,7 +479,7 @@ WantedBy=default.target`
                             {t.rich("siteInstallAdvantechDocsDescription", {
                                 docsLink: (chunks) => (
                                     <a
-                                        href="https://docs.praxis.causq.com/manage/sites/install-site"
+                                        href="https://docs-praxis.causq.com/manage/sites/install-site"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-primary hover:underline inline-flex items-center gap-1"

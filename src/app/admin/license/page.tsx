@@ -66,7 +66,7 @@ import { getLicenseLimitViolations } from "@app/lib/licenseLimits";
 import LicenseLimitsExceededBanner from "@app/components/LicenseLimitsExceededBanner";
 
 const ENTERPRISE_DOCS_URL =
-    "https://docs.praxis.causq.com/self-host/enterprise-edition";
+    "https://docs-praxis.causq.com/self-host/enterprise-edition";
 const ENTERPRISE_PRICING_URL = "https://praxis.causq.com/pricing#Self-Hosted";
 const LICENSE_PORTAL_URL =
     "https://praxis.causq.com/auth/login?internal_redirect=/settings/license?generate";

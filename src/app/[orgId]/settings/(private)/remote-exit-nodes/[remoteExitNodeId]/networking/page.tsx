@@ -181,7 +181,7 @@ export default function NetworkingPage() {
                     <SettingsSectionDescription>
                         {t("remoteExitNodeNetworkingDescription")}
                         <a
-                            href="https://docs.praxis.causq.com/manage/remote-node/backhaul"
+                            href="https://docs-praxis.causq.com/manage/remote-node/backhaul"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary hover:underline inline-flex items-center gap-1"

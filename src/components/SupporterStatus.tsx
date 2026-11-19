@@ -212,7 +212,7 @@ export default function SupporterStatus({
                             </Link>{" "}
                             {t("supportKeyPurchase2")}{" "}
                             <Link
-                                href="https://docs.praxis.causq.com/self-host/supporter-program"
+                                href="https://docs-praxis.causq.com/self-host/supporter-program"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline inline-flex items-center gap-1"

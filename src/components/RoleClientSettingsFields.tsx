@@ -130,7 +130,7 @@ function fromDnsChoice(choice: string, custom: string): string | null {
     return choice;
 }
 const CLIENT_SETTINGS_DOCS_URL =
-    "https://docs.praxis.causq.com/manage/clients/platforms#shared-preferences-all-platforms";
+    "https://docs-praxis.causq.com/manage/clients/platforms#shared-preferences-all-platforms";
 const managedBooleanSchema = z.enum(["unmanaged", "on", "off"]);
 
 function toManagedBoolean(value: boolean | null): ManagedBoolean {

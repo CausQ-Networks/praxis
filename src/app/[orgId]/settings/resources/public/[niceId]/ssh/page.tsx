@@ -485,7 +485,7 @@ function SshServerForm({
                                             sitesField="selectedSites"
                                             destinationField="destination"
                                             destinationPortField="destinationPort"
-                                            learnMoreHref="https://docs.praxis.causq.com/manage/resources/public/ssh#site-and-host-configuration"
+                                            learnMoreHref="https://docs-praxis.causq.com/manage/resources/public/ssh#site-and-host-configuration"
                                             defaultPort={22}
                                         />
                                     </SettingsFormCell>
@@ -498,7 +498,7 @@ function SshServerForm({
                                             siteField="selectedSite"
                                             destinationField="destination"
                                             destinationPortField="destinationPort"
-                                            learnMoreHref="https://docs.praxis.causq.com/manage/resources/public/ssh#site-and-host-configuration"
+                                            learnMoreHref="https://docs-praxis.causq.com/manage/resources/public/ssh#site-and-host-configuration"
                                             defaultPort={22}
                                         />
                                     </SettingsFormCell>

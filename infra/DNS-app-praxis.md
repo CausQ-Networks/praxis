@@ -1,21 +1,18 @@
 # Praxis custom hostnames (Cloudflare DNS)
 
-Wrangler OAuth can attach Worker routes but cannot create zone DNS records
-(`zone` scope is read-only). Add these CNAMEs in Cloudflare Dashboard →
-`causq.com` → DNS (Proxied):
+## Working now (Universal SSL `*.causq.com`)
 
-| Type  | Name        | Content                                         |
-|-------|-------------|-------------------------------------------------|
-| CNAME | app.praxis  | praxis-app-proxy.tufaylahmed.workers.dev        |
-| CNAME | docs.praxis | praxis-docs-proxy.tufaylahmed.workers.dev       |
+| Type  | Name         | Content                                      | Notes |
+|-------|--------------|----------------------------------------------|-------|
+| CNAME | app-praxis   | praxis-app-proxy.tufaylahmed.workers.dev     | Use this for cloud |
+| CNAME | docs-praxis  | praxis-docs-proxy.tufaylahmed.workers.dev    | Use this for docs |
 
-Until DNS exists:
+- Cloud: https://app-praxis.causq.com/
+- Docs: https://docs-praxis.causq.com/
+- CDN: https://praxis.causq.com/
 
-- Cloud landing: https://praxis.causq.com/
-- Docs landing: https://praxis.causq.com/docs/
-- CLI installer: https://praxis.causq.com/get-cli.sh
-- Downloads: https://praxis.causq.com/downloads/
-- Workers.dev fallbacks work for app/docs proxies
+## Nested names (need Advanced Certificate Manager)
 
-Or create an API token with `Zone.DNS Edit` for `causq.com` and export
-`CLOUDFLARE_API_TOKEN` so these records can be created automatically.
+`app-praxis.causq.com` and `docs-praxis.causq.com` CNAMEs exist, but free
+Universal SSL only covers `*.causq.com` (one label). Nested hosts need ACM
+for `*.praxis.causq.com` before HTTPS works.

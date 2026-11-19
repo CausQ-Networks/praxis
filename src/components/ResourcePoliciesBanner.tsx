@@ -18,7 +18,7 @@ export const ResourcePoliciesBanner = () => {
             description={t("resourcePoliciesBannerDescription")}
         >
             <Link
-                href="https://docs.praxis.causq.com/manage/resources/public/resource-policies"
+                href="https://docs-praxis.causq.com/manage/resources/public/resource-policies"
                 target="_blank"
                 rel="noopener noreferrer"
             >

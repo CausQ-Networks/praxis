@@ -311,7 +311,7 @@ function GeneralSectionForm({ org }: SectionFormProps) {
                                                             "newtAutoUpdateDescription"
                                                         )}{" "}
                                                         <a
-                                                            href="https://docs.praxis.causq.com/manage/sites/auto-update"
+                                                            href="https://docs-praxis.causq.com/manage/sites/auto-update"
                                                             target="_blank"
                                                             rel="noopener noreferrer"
                                                             className="text-primary hover:underline inline-flex items-center gap-1"

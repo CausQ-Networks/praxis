@@ -75,7 +75,7 @@ export default function DomainSetupClient({
                             </SettingsSectionDescription>
                         </div>
                         <Link
-                            href="https://docs.praxis.causq.com/manage/domains"
+                            href="https://docs-praxis.causq.com/manage/domains"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hidden sm:block shrink-0"

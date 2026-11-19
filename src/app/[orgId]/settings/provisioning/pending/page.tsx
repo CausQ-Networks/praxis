@@ -92,7 +92,7 @@ export default async function PendingSitesPage(props: PendingSitesPageProps) {
                 description={t("pendingSitesBannerDescription")}
             >
                 <Link
-                    href="https://docs.praxis.causq.com/manage/sites/install-site"
+                    href="https://docs-praxis.causq.com/manage/sites/install-site"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

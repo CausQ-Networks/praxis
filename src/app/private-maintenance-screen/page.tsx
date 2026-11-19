@@ -31,7 +31,7 @@ export default async function MaintenanceScreen() {
                     <p>{message}</p>
                     <p className="text-sm text-muted-foreground">{steps}</p>
                     <a
-                        href="https://docs.praxis.causq.com/manage/dns-cache"
+                        href="https://docs-praxis.causq.com/manage/dns-cache"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-sm text-primary hover:underline inline-flex items-center gap-1"

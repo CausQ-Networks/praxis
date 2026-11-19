@@ -234,7 +234,7 @@ export default function GeneralPage() {
                                                                 chunks
                                                             ) => (
                                                                 <a
-                                                                    href="https://docs.praxis.causq.com/manage/sites/configure-site#docker-socket-integration"
+                                                                    href="https://docs-praxis.causq.com/manage/sites/configure-site#docker-socket-integration"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     className="text-primary hover:underline inline-flex items-center gap-1"
@@ -320,7 +320,7 @@ export default function GeneralPage() {
                                                                 "siteAutoUpdateDescription"
                                                             )}{" "}
                                                             <a
-                                                                href="https://docs.praxis.causq.com/manage/sites/auto-update"
+                                                                href="https://docs-praxis.causq.com/manage/sites/auto-update"
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="text-primary hover:underline inline-flex items-center gap-1"

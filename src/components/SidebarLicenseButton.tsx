@@ -25,7 +25,7 @@ export default function SidebarLicenseButton({
 
     const url = user?.serverAdmin
         ? "/admin/license"
-        : "https://docs.praxis.causq.com/self-host/enterprise-edition";
+        : "https://docs-praxis.causq.com/self-host/enterprise-edition";
 
     const t = useTranslations();
 

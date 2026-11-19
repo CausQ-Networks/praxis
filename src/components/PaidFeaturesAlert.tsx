@@ -51,7 +51,7 @@ const bannerTextClassName = "whitespace-nowrap shrink-0";
 const docsLinkClassName =
     "inline-flex items-center gap-1 font-medium text-black-600 underline";
 const ENTERPRISE_DOCS_URL =
-    "https://docs.praxis.causq.com/self-host/enterprise-edition";
+    "https://docs-praxis.causq.com/self-host/enterprise-edition";
 const BOOK_A_DEMO_URL = "https://click.fossorial.io/ep922";
 
 function getTierLinkRenderer(billingHref: string) {

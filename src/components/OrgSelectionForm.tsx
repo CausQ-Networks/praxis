@@ -96,7 +96,7 @@ export function OrgSelectionForm() {
                             <p className="text-sm text-muted-foreground">
                                 {t("orgAuthWhatsThis")}{" "}
                                 <Link
-                                    href="https://docs.praxis.causq.com/manage/organizations/org-id"
+                                    href="https://docs-praxis.causq.com/manage/organizations/org-id"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline inline-flex items-center gap-1"
