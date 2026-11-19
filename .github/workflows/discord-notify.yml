@@ -1,0 +1,51 @@
+name: Discord notify
+
+# Posts release pings to the Praxis Discord webhook channel.
+# Repo secret: DISCORD_WEBHOOK
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      message:
+        description: "Custom message to post"
+        required: true
+        type: string
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Skip if webhook missing
+        id: check
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "${WEBHOOK}" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "DISCORD_WEBHOOK not set; skipping"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Post to Discord
+        if: steps.check.outputs.skip == 'false'
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          CUSTOM: ${{ inputs.message }}
+          RELEASE_URL: ${{ github.event.release.html_url }}
+          TAG: ${{ github.event.release.tag_name }}
+          REPO: ${{ github.repository }}
+          EVENT: ${{ github.event_name }}
+        run: |
+          set -euo pipefail
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            CONTENT="$CUSTOM"
+          else
+            CONTENT=$(printf '**Praxis release** `%s` on `%s`\n%s' "$TAG" "$REPO" "$RELEASE_URL")
+          fi
+          CONTENT="$(printf '%s' "$CONTENT" | head -c 1800)"
+          curl -fsS -H 'Content-Type: application/json' \
+            -d "$(jq -n --arg content "$CONTENT" '{content:$content}')" \
+            "$WEBHOOK"

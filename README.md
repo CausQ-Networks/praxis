@@ -1,6 +1,6 @@
 <div align="center">
     <h2>
-    <a href="https://pangolin.net/">
+    <a href="https://praxis.causq.com/">
         <picture>
             <source media="(prefers-color-scheme: dark)" srcset="public/logo/word_mark_white.png">
             <img alt="Pangolin Logo" src="public/logo/word_mark_black.png" width="350">
@@ -11,15 +11,15 @@
 
 <div align="center">
   <h5>
-      <a href="https://pangolin.net/">
+      <a href="https://praxis.causq.com/">
         Website
       </a>
       <span> | </span>
-      <a href="https://docs.pangolin.net/">
+      <a href="https://docs-praxis.causq.com/">
         Documentation
       </a>
       <span> | </span>
-      <a href="mailto:contact@pangolin.net">
+      <a href="mailto:support@causq.com">
         Contact Us
       </a>
   </h5>
@@ -27,17 +27,17 @@
 
 <div align="center">
 
-[![Discord](https://img.shields.io/discord/1325658630518865980?logo=discord&style=flat-square)](https://discord.gg/HCJR8Xhme4)
-[![Slack](https://img.shields.io/badge/chat-slack-yellow?style=flat-square&logo=slack)](https://pangolin.net/slack)
-[![Docker](https://img.shields.io/docker/pulls/fosrl/pangolin?style=flat-square)](https://hub.docker.com/r/fosrl/pangolin)
-![Stars](https://img.shields.io/github/stars/fosrl/pangolin?style=flat-square)
-[![YouTube](https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white&style=flat-square)](https://www.youtube.com/@pangolin-net)
+[![Discord](https://img.shields.io/discord/1572896060949659679?logo=discord&style=flat-square&label=Discord)](https://praxis.causq.com/discord/)
+[![Slack](https://img.shields.io/badge/chat-slack-yellow?style=flat-square&logo=slack)](https://praxis.causq.com/slack)
+[![Docker](https://img.shields.io/docker/pulls/CausQ-Networks/praxis?style=flat-square)](https://github.com/orgs/CausQ-Networks/packages)
+![Stars](https://img.shields.io/github/stars/CausQ-Networks/praxis?style=flat-square)
+[![YouTube](https://img.shields.io/badge/YouTube-red?logo=youtube&logoColor=white&style=flat-square)](https://praxis.causq.com/community/)
 
 </div>
 
 <p align="center">
     <strong>
-        Get started with Pangolin Cloud at <a href="https://app.pangolin.net/auth/signup">app.pangolin.net</a>
+        Get started with Pangolin Cloud at <a href="https://app-praxis.causq.com/">app.pangolin.net</a>
     </strong>
 </p>
 
@@ -64,9 +64,9 @@ Connectivity and security belong together. SASE platforms like Cloudflare One, Z
 
 ## Installation
 
-- Get started for free with [Pangolin Cloud](https://app.pangolin.net/).
-- Or, check out the [quick install guide](https://docs.pangolin.net/self-host/quick-install) for how to self-host Pangolin.
-- Or, deploy in minutes from a prebuilt image on [AWS or DigitalOcean](https://docs.pangolin.net/self-host/one-click-deploy):
+- Get started for free with [Pangolin Cloud](https://app-praxis.causq.com/).
+- Or, check out the [quick install guide](https://docs-praxis.causq.com/self-host/quick-install) for how to self-host Pangolin.
+- Or, deploy in minutes from a prebuilt image on [AWS or DigitalOcean](https://docs-praxis.causq.com/self-host/one-click-deploy):
   - **AWS:** Community and Enterprise AMIs for x86 and Graviton. Configure at launch with user-data or CloudFormation.
   - **DigitalOcean:** install from the [DigitalOcean marketplace](https://marketplace.digitalocean.com/apps/pangolin-ce-1?refcode=edf0480eeb81) for a one-click pre-configured installer.
 
@@ -160,11 +160,11 @@ Give users a landing page to quickly find and open the resources they can access
 
 Download the Pangolin client for your platform:
 
-- [Mac](https://pangolin.net/downloads/mac)
-- [Windows](https://pangolin.net/downloads/windows)
-- [Linux](https://pangolin.net/downloads/linux)
-- [iOS](https://pangolin.net/downloads/ios)
-- [Android](https://pangolin.net/downloads/android)
+- [Mac](https://praxis.causq.com/downloads/mac)
+- [Windows](https://praxis.causq.com/downloads/windows)
+- [Linux](https://praxis.causq.com/downloads/linux)
+- [iOS](https://praxis.causq.com/downloads/ios)
+- [Android](https://praxis.causq.com/downloads/android)
 
 ## Get Started
 
@@ -180,7 +180,7 @@ the docs to illustrate some basic ideas.
 
 ## Licensing
 
-Pangolin is dual licensed under the AGPL-3 and the [Fossorial Commercial License](https://pangolin.net/fcl). For inquiries about commercial licensing, please contact us at [contact@pangolin.net](mailto:contact@pangolin.net).
+Pangolin is dual licensed under the AGPL-3 and the [Fossorial Commercial License](https://praxis.causq.com/fcl). For inquiries about commercial licensing, please contact us at [contact@pangolin.net](mailto:support@causq.com).
 
 ## Contributions
 

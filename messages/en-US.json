@@ -3894,5 +3894,9 @@
     "redirectPermanentDescription": "Respond with 308 instead of 307. Permanent redirects are cached by browsers.",
     "redirectSslDescription": "Serve this redirect over HTTPS. Turn off to match requests on plain HTTP.",
     "rulesErrorInvalidMethodDescription": "Select at least one HTTP method.",
-    "rulesSelectMethods": "Select methods"
+    "rulesSelectMethods": "Select methods",
+    "discordCommunity": "Discord",
+    "discordJoin": "Join Discord",
+    "discordSupportHint": "Get help from the Praxis community on Discord.",
+    "communityPageTitle": "Community"
 }

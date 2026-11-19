@@ -41,10 +41,10 @@ export default async function AuthFooter() {
                     href="https://praxis.causq.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    aria-label="Built by Fossorial"
+                    aria-label="Built by CausQ"
                     className="flex items-center space-x-2 whitespace-nowrap"
                 >
-                    <span>© {new Date().getFullYear()} Fossorial, Inc.</span>
+                    <span>© {new Date().getFullYear()} CausQ Networks</span>
                 </a>
                 {build !== "saas" && (
                     <>
@@ -53,7 +53,7 @@ export default async function AuthFooter() {
                             href="https://praxis.causq.com"
                             target="_blank"
                             rel="noopener noreferrer"
-                            aria-label="Built by Fossorial"
+                            aria-label="Built by CausQ"
                             className="flex items-center space-x-2 whitespace-nowrap"
                         >
                             <span>
@@ -70,6 +70,16 @@ export default async function AuthFooter() {
                           ? t("enterpriseEdition")
                           : t("pangolinCloud")}
                 </span>
+                <Separator orientation="vertical" />
+                <a
+                    href="https://praxis.causq.com/discord/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Praxis Discord"
+                    className="flex items-center space-x-2 whitespace-nowrap"
+                >
+                    <span>{t("discordCommunity")}</span>
+                </a>
                 {build === "enterprise" &&
                 licenseStatus?.isHostLicensed &&
                 licenseStatus?.isLicenseValid &&

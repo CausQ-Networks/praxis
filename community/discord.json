@@ -1,0 +1,19 @@
+{
+    "name": "Praxis Discord",
+    "guildId": "1572896060949659679",
+    "primaryChannelId": "1572896062153293885",
+    "primaryChannelUrl": "https://discord.com/channels/1572896060949659679/1572896062153293885",
+    "inviteUrl": "https://discord.com/channels/1572896060949659679/1572896062153293885",
+    "badgeUrl": "https://img.shields.io/discord/1572896060949659679?logo=discord&style=flat-square&label=Discord",
+    "widgetUrl": "https://discord.com/widget?id=1572896060949659679&theme=dark",
+    "recommendedChannels": [
+        "announcements",
+        "general",
+        "support",
+        "self-hosting",
+        "showcase",
+        "development",
+        "releases"
+    ],
+    "notes": "Replace inviteUrl with a permanent discord.gg link (Expire: Never, Max uses: No limit) from Server Settings → Invites. Enable Server Widget for live member counts on shields.io."
+}
