@@ -51,7 +51,7 @@ const bannerTextClassName = "whitespace-nowrap shrink-0";
 const docsLinkClassName =
     "inline-flex items-center gap-1 font-medium text-black-600 underline";
 const ENTERPRISE_DOCS_URL =
-    "https://docs.pangolin.net/self-host/enterprise-edition";
+    "https://docs.praxis.causq.com/self-host/enterprise-edition";
 const BOOK_A_DEMO_URL = "https://click.fossorial.io/ep922";
 
 function getTierLinkRenderer(billingHref: string) {
@@ -117,7 +117,7 @@ export function PaidFeaturesAlert({ tiers }: Props) {
     const requiredTiersLabel = formatRequiredTiersList(tiers, t);
     const billingHref = orgId
         ? `/${orgId}/settings/billing`
-        : "https://pangolin.net/pricing";
+        : "https://praxis.causq.com/pricing";
     const tierLinkRenderer = getTierLinkRenderer(billingHref);
     const enterpriseDocsLinkRenderer = getDocsLinkRenderer(ENTERPRISE_DOCS_URL);
     const bookADemoLinkRenderer = getBookADemoLinkRenderer();

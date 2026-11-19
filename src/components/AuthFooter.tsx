@@ -38,7 +38,7 @@ export default async function AuthFooter() {
         <footer className="hidden md:block w-full mt-12 py-3 mb-6 px-4">
             <div className="container mx-auto flex flex-wrap justify-center items-center h-3 space-x-4 text-xs text-neutral-400 dark:text-neutral-600">
                 <a
-                    href="https://pangolin.net"
+                    href="https://praxis.causq.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Built by Fossorial"
@@ -50,14 +50,14 @@ export default async function AuthFooter() {
                     <>
                         <Separator orientation="vertical" />
                         <a
-                            href="https://pangolin.net"
+                            href="https://praxis.causq.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="Built by Fossorial"
                             className="flex items-center space-x-2 whitespace-nowrap"
                         >
                             <span>
-                                {process.env.BRANDING_APP_NAME || "Pangolin"}
+                                {process.env.BRANDING_APP_NAME || "Praxis"}
                             </span>
                         </a>
                     </>
@@ -91,7 +91,7 @@ export default async function AuthFooter() {
                     <>
                         <Separator orientation="vertical" />
                         <a
-                            href="https://pangolin.net/tos"
+                            href="https://praxis.causq.com/tos"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"
@@ -101,7 +101,7 @@ export default async function AuthFooter() {
                         </a>
                         <Separator orientation="vertical" />
                         <a
-                            href="https://pangolin.net/privacy"
+                            href="https://praxis.causq.com/privacy"
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="GitHub"

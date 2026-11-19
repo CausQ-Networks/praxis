@@ -96,7 +96,7 @@ function buildCli(
     const configure: AiConfigBlock = {
         id: `cli-configure-${clientArg}`,
         label: "Configure",
-        displayText: `pangolin configure ${clientArg}${resourceFlag}`
+        displayText: `praxis configure ${clientArg}${resourceFlag}`
     };
 
     if (auth.mode !== "keyed") {
@@ -108,7 +108,7 @@ function buildCli(
         {
             id: `cli-configure-key-${clientArg}`,
             label: "Configure with an API key",
-            displayText: `pangolin configure ${clientArg} ${auth.key}${resourceFlag}`
+            displayText: `praxis configure ${clientArg} ${auth.key}${resourceFlag}`
         }
     ];
 }
@@ -250,14 +250,14 @@ function buildCodexGuide(
         "~/.codex/config.toml",
         () =>
             [
-                'model_provider = "pangolin"',
+                'model_provider = "praxis"',
                 "",
-                "[model_providers.pangolin]",
-                'name = "Pangolin AI Gateway"',
+                "[model_providers.praxis]",
+                'name = "Praxis AI Gateway"',
                 `base_url = "${endpoint}/v1"`,
                 'wire_api = "responses"',
                 ...(auth.mode === "keyed"
-                    ? ['env_key = "PANGOLIN_API_KEY"']
+                    ? ['env_key = "PRAXIS_API_KEY"']
                     : [])
             ].join("\n"),
         auth
@@ -268,7 +268,7 @@ function buildCodexGuide(
             ? block(
                   "codex-shell",
                   "Shell",
-                  (key) => `export PANGOLIN_API_KEY=${key}`,
+                  (key) => `export PRAXIS_API_KEY=${key}`,
                   auth
               )
             : null;

@@ -12,7 +12,7 @@ function event(id: number, timestamp: number, status: string) {
     };
 }
 
-// Regression test for https://github.com/fosrl/pangolin/issues/3994
+// Regression test for https://github.com/CausQ-Networks/praxis/issues/3994
 function testSameSecondEventsUseInsertionOrder() {
     console.log("Running computeBuckets same-second ordering tests...");
 

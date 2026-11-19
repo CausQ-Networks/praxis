@@ -389,27 +389,27 @@ export default function MachineClientsTable({
                         options={[
                             {
                                 value: "macos",
-                                label: "Pangolin macOS"
+                                label: "Praxis macOS"
                             },
                             {
                                 value: "ios",
-                                label: "Pangolin iOS"
+                                label: "Praxis iOS"
                             },
                             {
                                 value: "ipados",
-                                label: "Pangolin iPadOS"
+                                label: "Praxis iPadOS"
                             },
                             {
                                 value: "android",
-                                label: "Pangolin Android"
+                                label: "Praxis Android"
                             },
                             {
                                 value: "windows",
-                                label: "Pangolin Windows"
+                                label: "Praxis Windows"
                             },
                             {
                                 value: "cli",
-                                label: "Pangolin CLI"
+                                label: "Praxis CLI"
                             },
                             {
                                 value: "olm",
@@ -434,12 +434,12 @@ export default function MachineClientsTable({
                     const originalRow = row.original;
 
                     const agentVersionMap: Record<string, string> = {
-                        "Pangolin Windows": "windows",
-                        "Pangolin Android": "android",
-                        "Pangolin iOS": "ios",
-                        "Pangolin iPadOS": "ios",
-                        "Pangolin macOS": "mac",
-                        "Pangolin CLI": "cli",
+                        "Praxis Windows": "windows",
+                        "Praxis Android": "android",
+                        "Praxis iOS": "ios",
+                        "Praxis iPadOS": "ios",
+                        "Praxis macOS": "mac",
+                        "Praxis CLI": "cli",
                         "Olm CLI": "olm"
                     };
 

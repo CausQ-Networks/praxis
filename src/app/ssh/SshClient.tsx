@@ -615,7 +615,7 @@ export default function SshClient({
                                         <p className="text-sm text-muted-foreground">
                                             {t("sshPrivateKeyDisclaimer")}{" "}
                                             <Link
-                                                href="https://docs.pangolin.net/manage/ssh#authentication-method"
+                                                href="https://docs.praxis.causq.com/manage/ssh#authentication-method"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="text-primary hover:underline inline-flex items-center gap-1"

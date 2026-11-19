@@ -24,7 +24,7 @@ type EnterpriseEditionKeyGeneratedProps = {
     // Support level and add-ons on the license
     support?: "community" | "email" | "priority";
     highAvailability?: boolean;
-    // Set when the license is linked to an org in Pangolin Cloud
+    // Set when the license is linked to an org in Praxis Cloud
     modifySubscriptionLink?: string;
     // Set when it isn't linked yet: sign up with the buyer's email to manage it
     signUpLink?: string;
@@ -109,7 +109,7 @@ export const EnterpriseEditionKeyGenerated = ({
                                             Manage billing or change the number
                                             of users, sites and machine clients,
                                             or the support level and add-ons, on
-                                            this license from your Pangolin
+                                            this license from your Praxis
                                             Cloud account.
                                         </EmailText>
                                         <ButtonLink
@@ -125,14 +125,14 @@ export const EnterpriseEditionKeyGenerated = ({
                                                 To manage billing or change the
                                                 number of users, sites and
                                                 machine clients on this license,
-                                                sign up for a free Pangolin
+                                                sign up for a free Praxis
                                                 Cloud account with this email
                                                 address. The license is linked
                                                 to your account when you create
                                                 your organization.
                                             </EmailText>
                                             <ButtonLink href={signUpLink}>
-                                                Sign up for Pangolin Cloud
+                                                Sign up for Praxis Cloud
                                             </ButtonLink>
                                         </EmailSection>
                                     )
@@ -144,21 +144,21 @@ export const EnterpriseEditionKeyGenerated = ({
                             <EmailText>Your license key:</EmailText>
                             <CopyCodeBox
                                 text={keyValue}
-                                hint="Copy this key and use it when activating Enterprise Edition on your Pangolin host."
+                                hint="Copy this key and use it when activating Enterprise Edition on your Praxis host."
                             />
                         </EmailSection>
 
                         {!personalUseOnly && support !== "community" && (
                             <div className="mx-6 my-4 rounded-md border border-gray-200 bg-gray-50 px-4 py-3">
                                 <div className="mb-1 font-semibold text-gray-900 text-base">
-                                    Need help with Pangolin?
+                                    Need help with Praxis?
                                 </div>
                                 <p className="mt-0 mb-2 text-base text-gray-700 leading-relaxed">
                                     Your license includes{" "}
                                     {SUPPORT_LABELS[support].toLowerCase()}. To
                                     make a software support request for your
                                     self-hosted instance, submit it from the{" "}
-                                    <strong>Licenses</strong> page on Pangolin
+                                    <strong>Licenses</strong> page on Praxis
                                     Cloud. We will already have your license
                                     details, so you don&apos;t need to include
                                     them in your request.
@@ -172,7 +172,7 @@ export const EnterpriseEditionKeyGenerated = ({
                                     >
                                         {modifySubscriptionLink
                                             ? "Open the Licenses page"
-                                            : "Sign up for Pangolin Cloud"}
+                                            : "Sign up for Praxis Cloud"}
                                     </a>
                                 )}
                             </div>
@@ -182,10 +182,10 @@ export const EnterpriseEditionKeyGenerated = ({
                             For license or billing questions, please reach out
                             to support at{" "}
                             <a
-                                href="mailto:support@pangolin.net"
+                                href="mailto:support@praxis.causq.com"
                                 className="text-primary font-medium"
                             >
-                                support@pangolin.net
+                                support@praxis.causq.com
                             </a>
                             .
                         </EmailText>

@@ -45,7 +45,7 @@ import { SELF_HOSTED_LIMITS } from "@server/lib/billing/selfHostedLicenseLimits"
 
 const FORM_ID = "edit-license-key-form";
 
-const CONTACT_SALES_URL = "https://pangolin.net/contact";
+const CONTACT_SALES_URL = "https://praxis.causq.com/contact";
 
 const SUPPORT_LEVELS: LicenseSupport[] = ["community", "email", "priority"];
 

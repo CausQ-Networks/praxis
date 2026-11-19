@@ -936,7 +936,7 @@ export const ProxyResourceTargetsForm = forwardRef<
                     <p className="text-sm text-muted-foreground mt-3">
                         {t("proxyMultiSiteRoundRobinNodeHelp")}{" "}
                         <a
-                            href="https://docs.pangolin.net/manage/resources/public/targets#distributing-sites-load-across-servers"
+                            href="https://docs.praxis.causq.com/manage/resources/public/targets#distributing-sites-load-across-servers"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-primary hover:underline inline-flex items-center gap-1"

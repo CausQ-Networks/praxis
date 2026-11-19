@@ -8,6 +8,6 @@ export async function generateBrowserGatewayMetadata(
     return {
         title: target?.name
             ? `${protocol} - ${target.name}`
-            : `${protocol} - Pangolin`
+            : `${protocol} - Praxis`
     };
 }

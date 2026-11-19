@@ -579,7 +579,7 @@ export function readConfigFile() {
 
     if (!environment) {
         throw new Error(
-            "No configuration file found. Please create one. https://docs.pangolin.net/self-host/advanced/config-file"
+            "No configuration file found. Please create one. https://docs.praxis.causq.com/self-host/advanced/config-file"
         );
     }
 

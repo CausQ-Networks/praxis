@@ -159,7 +159,7 @@ export function SshServerSettingsFields({
                         <p className="text-sm text-muted-foreground">
                             {t("sshDaemonDisclaimer")}{" "}
                             <a
-                                href="https://docs.pangolin.net/manage/ssh"
+                                href="https://docs.praxis.causq.com/manage/ssh"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-primary hover:underline inline-flex items-center gap-1"

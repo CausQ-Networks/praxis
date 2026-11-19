@@ -235,7 +235,7 @@ export function LayoutSidebar({
                             <>
                                 <div className="text-xs text-muted-foreground text-left">
                                     <Link
-                                        href="https://github.com/fosrl/pangolin"
+                                        href="https://github.com/CausQ-Networks/praxis"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="flex items-center justify-start gap-1"
@@ -244,7 +244,7 @@ export function LayoutSidebar({
                                             ? t("communityEdition")
                                             : build === "enterprise"
                                               ? t("enterpriseEdition")
-                                              : "Pangolin Cloud"}
+                                              : "Praxis Cloud"}
                                     </Link>
                                 </div>
                                 {build === "enterprise" &&
@@ -262,7 +262,7 @@ export function LayoutSidebar({
                                 {env?.app?.version && (
                                     <div className="text-xs text-muted-foreground text-left">
                                         <Link
-                                            href={`https://github.com/fosrl/pangolin/releases/tag/${env.app.version}`}
+                                            href={`https://github.com/CausQ-Networks/praxis/releases/tag/${env.app.version}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="flex items-center justify-start gap-1"

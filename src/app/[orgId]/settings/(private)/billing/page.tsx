@@ -77,7 +77,7 @@ const planOptions: PlanOption[] = [
         price: "Free",
         tierType: null,
         features: [
-            "Basic Pangolin features",
+            "Basic Praxis features",
             "Free provided domains",
             "Web-based proxy resources",
             "Private resources and clients",
@@ -94,7 +94,7 @@ const planOptions: PlanOption[] = [
             "Everything in Basic",
             "OAuth2/OIDC, Google, & Azure SSO",
             "Bring your own identity provider",
-            "Pangolin SSH",
+            "Praxis SSH",
             "Custom branding",
             "Device admin approvals"
         ]
@@ -123,7 +123,7 @@ const planOptions: PlanOption[] = [
             "Everything in Team",
             "Multiple organizations (multi-tenancy)",
             "Auto-provisioning via IdP",
-            "Pangolin SSH",
+            "Praxis SSH",
             "Device approvals",
             "Custom branding",
             "Business support"
@@ -499,7 +499,7 @@ export default function BillingPage() {
     };
 
     const handleContactUs = () => {
-        window.open("https://pangolin.net/contact", "_blank");
+        window.open("https://praxis.causq.com/contact", "_blank");
     };
 
     // Get current plan ID from tier
@@ -1020,7 +1020,7 @@ export default function BillingPage() {
                 </SettingsSectionBody>
                 <SettingsSectionFooter>
                     <Link
-                        href="https://pangolin.net/pricing"
+                        href="https://praxis.causq.com/pricing"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

@@ -1,0 +1,10 @@
+# Proxies praxis.causq.com → praxis-static Cloudflare Pages.
+# Deploy: npx wrangler@4 deploy --config infra/praxis-domain-proxy/wrangler.toml
+name = "praxis-domain-proxy"
+main = "worker.js"
+compatibility_date = "2026-11-19"
+workers_dev = true
+
+[[routes]]
+pattern = "praxis.causq.com/*"
+zone_name = "causq.com"

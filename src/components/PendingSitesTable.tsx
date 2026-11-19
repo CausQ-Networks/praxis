@@ -413,7 +413,7 @@ export default function PendingSitesTable({
                         originalRow.exitNodeName.slice(1).toLowerCase();
                     return (
                         <Badge variant="secondary">
-                            Pangolin {capitalizedName}
+                            Praxis {capitalizedName}
                         </Badge>
                     );
                 }

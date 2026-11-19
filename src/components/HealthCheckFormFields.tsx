@@ -182,7 +182,7 @@ export function HealthCheckFormFields({
                                         </Link>
                                         {" or "}
                                         <Link
-                                            href="https://pangolin.net/contact"
+                                            href="https://praxis.causq.com/contact"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="inline-flex items-center gap-1 font-medium text-black-600 underline"

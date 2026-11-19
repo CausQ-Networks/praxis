@@ -78,7 +78,7 @@ export class Config {
         process.env.DASHBOARD_URL = parsedConfig.app.dashboard_url;
         process.env.STATIC_BASE_URL =
             parsedConfig.app.static_base_url ||
-            "https://praxis-static.pages.dev";
+            "https://praxis.causq.com";
         process.env.FLAGS_DISABLE_LOCAL_SITES = parsedConfig.flags
             ?.disable_local_sites
             ? "true"

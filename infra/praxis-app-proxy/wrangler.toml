@@ -1,0 +1,10 @@
+name = "praxis-app-proxy"
+main = "worker.js"
+compatibility_date = "2026-11-19"
+workers_dev = true
+
+[[routes]]
+pattern = "app.praxis.causq.com/*"
+zone_name = "causq.com"
+
+# Custom domains can auto-create DNS when zone write is available

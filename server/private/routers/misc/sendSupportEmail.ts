@@ -65,7 +65,7 @@ export async function sendSupportEmail(
                 }),
                 {
                     name: req.user?.email || "Support User",
-                    to: "support@pangolin.net",
+                    to: "support@causq.com",
                     replyTo: req.user?.email || undefined,
                     from: config.getNoReplyEmail(),
                     subject: `Support Request: ${subject}`

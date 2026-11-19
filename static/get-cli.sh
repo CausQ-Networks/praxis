@@ -1,8 +1,8 @@
 #!/bin/sh
-# Praxis CLI installer — hosted on GitHub Pages / Cloudflare (replaces static.pangolin.net/get-cli.sh)
-# Usage: curl -fsSL https://praxis-static.pages.dev/get-cli.sh | sh
+# Praxis CLI installer — https://praxis.causq.com/get-cli.sh
+# Usage: curl -fsSL https://praxis.causq.com/get-cli.sh | sh
 #
-# Binaries: GitHub Releases (default fosrl/cli until a Praxis CLI fork publishes assets).
+# Binaries: GitHub Releases on CausQ-Networks/praxis-cli
 # Override: PRAXIS_CLI_REPO=owner/repo PRAXIS_CLI_VERSION=1.2.3
 
 set -e
@@ -12,7 +12,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-REPO="${PRAXIS_CLI_REPO:-fosrl/cli}"
+REPO="${PRAXIS_CLI_REPO:-CausQ-Networks/praxis-cli}"
 REQUESTED_VERSION="${PRAXIS_CLI_VERSION:-}"
 
 print_status() { printf '%b[INFO]%b %s\n' "${GREEN}" "${NC}" "$1"; }
@@ -88,11 +88,10 @@ install_cli() {
     platform="$1"
     install_dir="$2"
     sudo_cmd="$3"
-    # Upstream asset naming (fosrl/cli). Keep until Praxis publishes its own assets.
-    asset_name="pangolin-cli_${platform}"
-    final_name="pangolin"
+    asset_name="praxis-cli_${platform}"
+    final_name="praxis"
     case "$platform" in
-        *windows*) asset_name="${asset_name}.exe"; final_name="pangolin.exe" ;;
+        *windows*) asset_name="${asset_name}.exe"; final_name="praxis.exe" ;;
     esac
 
     download_url="${BASE_URL}/${asset_name}"
@@ -128,7 +127,7 @@ main() {
         exit 1
     fi
 
-    print_status "Installing Praxis site/client CLI..."
+    print_status "Installing Praxis CLI..."
     resolve_release
     TMP_DIR=$(mktemp -d "${TMPDIR:-/tmp}/praxis-cli.XXXXXX")
     PLATFORM=$(detect_platform)
@@ -136,7 +135,8 @@ main() {
     INSTALL_DIR=$(get_install_dir)
     SUDO_CMD=$(get_sudo_cmd "$INSTALL_DIR")
     install_cli "$PLATFORM" "$INSTALL_DIR" "$SUDO_CMD"
-    print_status "Done. Try: pangolin --help"
+    print_status "Done. Try: praxis --help"
 }
 
 main "$@"
+# praxis-cli releases: CausQ-Networks/praxis-cli v0.21.3

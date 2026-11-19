@@ -71,11 +71,11 @@ class TelemetryClient {
             this.startAnalyticsInterval();
 
             logger.info(
-                "Pangolin gathers anonymous usage data to help us better understand how the software is used and guide future improvements and feature development. You can find more details, including instructions for opting out of this anonymous data collection, at: https://docs.pangolin.net/telemetry"
+                "Pangolin gathers anonymous usage data to help us better understand how the software is used and guide future improvements and feature development. You can find more details, including instructions for opting out of this anonymous data collection, at: https://docs.praxis.causq.com/telemetry"
             );
         } else if (!this.enabled) {
             logger.info(
-                "Analytics usage statistics collection is disabled. If you enable this, you can help us make Pangolin better for everyone. Learn more at: https://docs.pangolin.net/telemetry"
+                "Analytics usage statistics collection is disabled. If you enable this, you can help us make Pangolin better for everyone. Learn more at: https://docs.praxis.causq.com/telemetry"
             );
         }
     }

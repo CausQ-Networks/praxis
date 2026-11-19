@@ -826,7 +826,7 @@ export async function getTraefikConfig(
                 ] = {
                     headers: {
                         customRequestHeaders: {
-                            Host: "app.pangolin.net", // if we are sending to the cloud the host needs to be this but we will pull the p-host to find the resource
+                            Host: "praxis.causq.com", // if we are sending to the cloud the host needs to be this but we will pull the p-host to find the resource
                             "p-host": fullDomain
                         }
                     }

@@ -67,7 +67,7 @@ export default function SiteInfoCard({}: SiteInfoCardProps) {
         // site still running an older Newt reports only newtVersion.
         // Without these fallbacks the badge renders with no label and
         // no version at all.
-        const agentLabel = site.agent == "cli" ? "Pangolin CLI" : "Newt";
+        const agentLabel = site.agent == "cli" ? "Praxis CLI" : "Newt";
         const agentVersion = site.agentVersion ?? site.newtVersion;
         return (
             <Alert>

@@ -1,5 +1,5 @@
 # To see all available options, please visit the docs:
-# https://docs.pangolin.net/
+# https://docs.praxis.causq.com/
 
 gerbil:
     start_port: 51820
@@ -7,8 +7,8 @@ gerbil:
 
 app:
     dashboard_url: "https://{{.DashboardDomain}}"
-    # Installer/package CDN (Cloudflare Pages; GitHub Pages is the backup origin).
-    # static_base_url: "https://praxis-static.pages.dev"
+    # Installer/package CDN (praxis.causq.com → Cloudflare Pages; GitHub Pages is backup).
+    # static_base_url: "https://praxis.causq.com"
     log_level: "info"
     telemetry:
         anonymous_usage: true

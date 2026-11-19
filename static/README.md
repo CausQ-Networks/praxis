@@ -1,6 +1,8 @@
 # Praxis static CDN
 
-Mirrors the role of `static.pangolin.net` using **GitHub** (Pages + Releases) and **Cloudflare** (R2 / Pages).
+Public origin: **https://praxis.causq.com**
+
+Mirrors the role of `static.pangolin.net` using **Cloudflare** (Pages + Worker route) and **GitHub Pages** as backup.
 
 ## Layout
 
@@ -10,59 +12,37 @@ Mirrors the role of `static.pangolin.net` using **GitHub** (Pages + Releases) an
 | `index.html` | Landing page for the static origin |
 | `packages/` | Optional npm tarball mirrors (e.g. Devolutions) |
 
-## GitHub (primary, works first)
+## Origins
 
-1. In the repo: **Settings → Pages → Build and deployment → GitHub Actions**.
-2. Push to `main` (workflow `.github/workflows/deploy-static.yml`).
-3. Public URL: `https://tufaylahmed.github.io/praxis/get-cli.sh` (backup origin)
+| Origin | URL | Role |
+| --- | --- | --- |
+| Custom domain | `https://praxis.causq.com` | Primary (Worker → Pages) |
+| Cloudflare Pages | `https://praxis-static.pages.dev` | Upstream content |
+| GitHub Pages | `https://causq-networks.github.io/praxis` | Backup |
 
 Set in `config/config.yml`:
 
 ```yaml
 app:
-  static_base_url: "https://praxis-static.pages.dev"
+  static_base_url: "https://praxis.causq.com"
 ```
 
-## Cloudflare (custom domain + edge CDN)
+## Domain wiring
 
-### Option A — Cloudflare Pages (recommended)
+1. Pages project `praxis-static` holds the files (`npx wrangler pages deploy static --project-name=praxis-static`).
+2. Worker `infra/praxis-domain-proxy` routes `praxis.causq.com/*` to that Pages project (active now).
+3. Optional hardening: in Cloudflare DNS for `causq.com`, set CNAME `praxis` → `praxis-static.pages.dev` (proxied). That lets the Pages custom domain finish SSL without the Worker. Needs a Zone DNS Edit API token (Wrangler OAuth cannot write DNS).
 
-1. Authenticate Cloudflare in Cursor desktop (Cloudflare MCP) or install Wrangler: `npm i -g wrangler && wrangler login`.
-2. Create a Pages project from this folder:
+## CI
 
-```bash
-cd static
-npx wrangler pages project create praxis-static
-npx wrangler pages deploy . --project-name=praxis-static
-```
-
-3. In Cloudflare dashboard: Pages → `praxis-static` → Custom domains → add `static.yourdomain.com` (DNS can stay at Namecheap with a CNAME to Cloudflare).
-4. Update config:
-
-```yaml
-app:
-  static_base_url: "https://static.yourdomain.com"
-```
-
-### Option B — R2 bucket + public access
-
-```bash
-npx wrangler r2 bucket create praxis-static
-npx wrangler r2 object put praxis-static/get-cli.sh --file=./get-cli.sh --content-type=text/x-sh
-```
-
-Attach a custom domain to the bucket in the Cloudflare dashboard, then point `static_base_url` at it.
-
-### CI sync (optional)
-
-Add repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`. The deploy workflow will push to Pages when those secrets exist.
+Push to `static/` on `main` runs `.github/workflows/deploy-static.yml` (GitHub Pages + Cloudflare Pages when secrets are set).
 
 ## Binaries
 
-`get-cli.sh` downloads from **GitHub Releases**, not from the CDN. Default repo: `fosrl/cli`. Override later:
+`get-cli.sh` downloads from **GitHub Releases** on `CausQ-Networks/praxis-cli` (not from the CDN). Override if needed:
 
 ```bash
-PRAXIS_CLI_REPO=YourOrg/praxis-cli curl -fsSL …/get-cli.sh | sh
+PRAXIS_CLI_REPO=CausQ-Networks/praxis-cli PRAXIS_CLI_VERSION=0.21.0 curl -fsSL https://praxis.causq.com/get-cli.sh | sh
 ```
 
 ## npm packages

@@ -666,7 +666,7 @@ function PrivateResourceDetails({
                     <span>
                         {t("resourceLauncherPrivateClientRequired")}{" "}
                         <a
-                            href="https://pangolin.net/downloads"
+                            href="https://praxis.causq.com/downloads"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-1 text-primary hover:underline"

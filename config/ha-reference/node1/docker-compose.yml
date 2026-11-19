@@ -1,7 +1,7 @@
 name: pangolin
 services:
   pangolin:
-    image: docker.io/fosrl/pangolin:ee-postgresql-latest
+    image: docker.io/causq-networks/praxis:ee-postgresql-latest
     container_name: pangolin
     restart: unless-stopped
     volumes:
@@ -15,7 +15,7 @@ services:
       retries: 15
 
   gerbil:
-    image: docker.io/fosrl/gerbil:latest
+    image: docker.io/causq-networks/praxis-gerbil:latest
     container_name: gerbil
     restart: unless-stopped
     depends_on:

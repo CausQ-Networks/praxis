@@ -19,8 +19,8 @@ export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
     title: {
-        template: `%s - ${process.env.BRANDING_APP_NAME || "Pangolin"}`,
-        default: `Settings - ${process.env.BRANDING_APP_NAME || "Pangolin"}`
+        template: `%s - ${process.env.BRANDING_APP_NAME || "Praxis"}`,
+        default: `Settings - ${process.env.BRANDING_APP_NAME || "Praxis"}`
     },
     description: ""
 };

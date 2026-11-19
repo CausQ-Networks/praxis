@@ -67,7 +67,7 @@ export const SupportEmail = ({
                                     <strong>software support request</strong>{" "}
                                     for a self-hosted instance, not a license or
                                     billing question. It was sent from the
-                                    Licenses page in Pangolin Cloud, and the
+                                    Licenses page in Praxis Cloud, and the
                                     user was told we have the license details
                                     below.
                                 </EmailText>

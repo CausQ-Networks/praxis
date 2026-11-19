@@ -74,7 +74,7 @@ export function OlmInstallCommands({
             "Docker Compose": [
                 `services:
   pangolin-cli:
-    image: fosrl/pangolin-cli
+    image: causq-networks/praxis-cli
     container_name: pangolin-cli
     restart: unless-stopped
     network_mode: host
@@ -88,14 +88,14 @@ export function OlmInstallCommands({
       - CLIENT_SECRET=${secret}`
             ],
             "Docker Run": [
-                `docker run -dit --network host --cap-add NET_ADMIN --device /dev/net/tun:/dev/net/tun fosrl/pangolin-cli up client --id ${id} --secret ${secret} --endpoint ${endpoint} --attach`
+                `docker run -dit --network host --cap-add NET_ADMIN --device /dev/net/tun:/dev/net/tun causq-networks/praxis-cli up client --id ${id} --secret ${secret} --endpoint ${endpoint} --attach`
             ]
         },
         windows: {
             Run: [
                 {
                     title: t("install"),
-                    link: `https://github.com/fosrl/cli/releases/latest/download/pangolin-cli_windows_installer.msi`
+                    link: `https://github.com/CausQ-Networks/praxis-cli/releases/latest/download/praxis-cli_windows_amd64.exe`
                 },
                 {
                     title: t("run"),
@@ -105,7 +105,7 @@ export function OlmInstallCommands({
             Service: [
                 {
                     title: t("install"),
-                    link: `https://github.com/fosrl/cli/releases/latest/download/pangolin-cli_windows_installer.msi`
+                    link: `https://github.com/CausQ-Networks/praxis-cli/releases/latest/download/praxis-cli_windows_amd64.exe`
                 },
                 {
                     title: t("run"),

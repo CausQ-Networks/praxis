@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 const AUTO_PROVISION_DOCS_URL =
-    "https://docs.pangolin.net/manage/identity-providers/auto-provisioning";
+    "https://docs.praxis.causq.com/manage/identity-providers/auto-provisioning";
 
 type IdpAutoProvisionUsersDescriptionProps = {
     className?: string;

@@ -18,7 +18,7 @@ import { build } from "@server/build";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-    title: `Server Admin - Pangolin`,
+    title: `Server Admin - Praxis`,
     description: ""
 };
 

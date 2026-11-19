@@ -145,7 +145,7 @@ export default async function Page(props: {
                     {t.rich("loginLegalDisclaimer", {
                         termsOfService: (chunks) => (
                             <Link
-                                href="https://pangolin.net/tos"
+                                href="https://praxis.causq.com/tos"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline"
@@ -155,7 +155,7 @@ export default async function Page(props: {
                         ),
                         privacyPolicy: (chunks) => (
                             <Link
-                                href="https://pangolin.net/privacy"
+                                href="https://praxis.causq.com/privacy"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline"

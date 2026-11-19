@@ -13,14 +13,16 @@ function PoweredByLabel({ brandName }: { brandName: string }) {
         <div className="text-center mb-2">
             <span className="text-sm text-muted-foreground">
                 {t("poweredBy")}{" "}
-                {brandName === "Pangolin" ? (
+                {brandName === "Praxis" ? (
+                    <span>Praxis</span>
+                ) : brandName === "Praxis" || brandName === "Pangolin" ? (
                     <Link
-                        href="https://pangolin.net/"
+                        href="https://praxis.causq.com/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="underline"
                     >
-                        Pangolin
+                        Praxis
                     </Link>
                 ) : (
                     brandName
@@ -44,10 +46,10 @@ export default function PoweredByPangolin() {
 
         return (
             <PoweredByLabel
-                brandName={env.branding.appName || "Pangolin"}
+                brandName={env.branding.appName || "Praxis"}
             />
         );
     }
 
-    return <PoweredByLabel brandName="Pangolin" />;
+    return <PoweredByLabel brandName="Praxis" />;
 }

@@ -189,12 +189,12 @@ export default function GeneratePersonalLicenseForm({
                                         "generateLicenseKeyForm.alerts.commercialUseDisclosure.description"
                                     )}{" "}
                                     <a
-                                        href="https://pangolin.net/fcl"
+                                        href="https://praxis.causq.com/fcl"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-primary hover:underline"
                                     >
-                                        https://pangolin.net/fcl
+                                        https://praxis.causq.com/fcl
                                     </a>
                                 </AlertDescription>
                             </Alert>
@@ -263,7 +263,7 @@ export default function GeneratePersonalLicenseForm({
                                                                     "signUpTerms.IAgreeToThe"
                                                                 )}{" "}
                                                                 <a
-                                                                    href="https://pangolin.net/tos"
+                                                                    href="https://praxis.causq.com/tos"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     className="text-primary hover:underline"
@@ -276,7 +276,7 @@ export default function GeneratePersonalLicenseForm({
                                                                     "signUpTerms.and"
                                                                 )}{" "}
                                                                 <a
-                                                                    href="https://pangolin.net/privacy"
+                                                                    href="https://praxis.causq.com/privacy"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     className="text-primary hover:underline"
@@ -314,12 +314,12 @@ export default function GeneratePersonalLicenseForm({
                                                                     "generateLicenseKeyForm.form.complianceConfirmation"
                                                                 )}{" "}
                                                                 <a
-                                                                    href="https://pangolin.net/fcl"
+                                                                    href="https://praxis.causq.com/fcl"
                                                                     target="_blank"
                                                                     rel="noopener noreferrer"
                                                                     className="text-primary hover:underline"
                                                                 >
-                                                                    https://pangolin.net/fcl
+                                                                    https://praxis.causq.com/fcl
                                                                 </a>
                                                             </div>
                                                         </FormLabel>

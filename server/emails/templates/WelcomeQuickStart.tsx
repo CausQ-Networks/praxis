@@ -50,7 +50,7 @@ export const WelcomeQuickStart = ({
                         <EmailGreeting>Hi there,</EmailGreeting>
 
                         <EmailText>
-                            Thank you for trying out Pangolin! We're excited to
+                            Thank you for trying out Praxis! We're excited to
                             have you on board.
                         </EmailText>
 
@@ -88,7 +88,7 @@ export const WelcomeQuickStart = ({
                                     To learn how to use Newt, including more
                                     installation methods, visit the{" "}
                                     <a
-                                        href="https://docs.pangolin.net/manage/sites/install-site"
+                                        href="https://docs.praxis.causq.com/manage/sites/install-site"
                                         className="underline"
                                     >
                                         docs

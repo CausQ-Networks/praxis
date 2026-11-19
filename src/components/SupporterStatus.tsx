@@ -212,7 +212,7 @@ export default function SupporterStatus({
                             </Link>{" "}
                             {t("supportKeyPurchase2")}{" "}
                             <Link
-                                href="https://docs.pangolin.net/self-host/supporter-program"
+                                href="https://docs.praxis.causq.com/self-host/supporter-program"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="underline inline-flex items-center gap-1"
@@ -229,7 +229,7 @@ export default function SupporterStatus({
                                 advanced features, consider our self-serve
                                 enterprise license and Enterprise Edition.{" "}
                                 <Link
-                                    href="https://pangolin.net/pricing#Self-Hosted"
+                                    href="https://praxis.causq.com/pricing#Self-Hosted"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="underline inline-flex items-center gap-1"
@@ -276,7 +276,7 @@ export default function SupporterStatus({
                                     </CardContent>
                                     <CardFooter>
                                         <Link
-                                            href="https://github.com/sponsors/fosrl/sponsorships?tier_id=474929"
+                                            href="https://praxis.causq.com/"
                                             target="_blank"
                                             rel="noopener noreferrer"
                                             className="w-full"
@@ -323,7 +323,7 @@ export default function SupporterStatus({
                                         {supporterStatus?.tier !==
                                         "Limited Supporter" ? (
                                             <Link
-                                                href="https://github.com/sponsors/fosrl/sponsorships?tier_id=463100"
+                                                href="https://praxis.causq.com/"
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 className="w-full"

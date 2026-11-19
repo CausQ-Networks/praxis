@@ -19,7 +19,7 @@ export const ApprovalsBanner = () => {
             description={t("approvalsBannerDescription")}
         >
             <Link
-                href="https://docs.pangolin.net/manage/access-control/approvals"
+                href="https://docs.praxis.causq.com/manage/access-control/approvals"
                 target="_blank"
                 rel="noopener noreferrer"
             >

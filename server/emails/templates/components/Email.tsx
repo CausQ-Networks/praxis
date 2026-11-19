@@ -16,8 +16,8 @@ export function EmailLetterHead() {
     return (
         <div className="px-6 pt-8 pb-2 text-center">
             <Img
-                src="https://fossorial-public-assets.s3.us-east-1.amazonaws.com/word_mark_black.png"
-                alt="Pangolin Logo"
+                src="https://causq-public-assets.s3.us-east-1.amazonaws.com/word_mark_black.png"
+                alt="Praxis Logo"
                 width="135"
                 height="auto"
                 className="mx-auto"
@@ -89,10 +89,10 @@ export function EmailFooter({ children }: { children: React.ReactNode }) {
                     <p className="text-xs text-gray-400 mt-4">
                         For any questions or support, please contact us at:
                         <br />
-                        support@pangolin.net
+                        support@praxis.causq.com
                     </p>
                     <p className="text-xs text-gray-300 text-center mt-4">
-                        &copy; {new Date().getFullYear()} Fossorial, Inc. All
+                        &copy; {new Date().getFullYear()} CausQ, Inc. All
                         rights reserved.
                     </p>
                 </div>
@@ -107,7 +107,7 @@ export function EmailSignature() {
             <p className="mb-2">
                 Best regards,
                 <br />
-                <strong>The Pangolin Team</strong>
+                <strong>The Praxis Team</strong>
             </p>
         </div>
     );

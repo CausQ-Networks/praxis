@@ -21,7 +21,7 @@ export const ClientDownloadBanner = () => {
             description={t("downloadClientBannerDescription")}
         >
             <Link
-                href="https://pangolin.net/downloads/mac"
+                href="https://praxis.causq.com/downloads/mac"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -35,7 +35,7 @@ export const ClientDownloadBanner = () => {
                 </Button>
             </Link>
             <Link
-                href="https://pangolin.net/downloads/windows"
+                href="https://praxis.causq.com/downloads/windows"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -49,7 +49,7 @@ export const ClientDownloadBanner = () => {
                 </Button>
             </Link>
             <Link
-                href="https://pangolin.net/downloads/linux"
+                href="https://praxis.causq.com/downloads/linux"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -63,7 +63,7 @@ export const ClientDownloadBanner = () => {
                 </Button>
             </Link>
             <Link
-                href="https://pangolin.net/downloads/ios"
+                href="https://praxis.causq.com/downloads/ios"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -77,7 +77,7 @@ export const ClientDownloadBanner = () => {
                 </Button>
             </Link>
             <Link
-                href="https://pangolin.net/downloads/android"
+                href="https://praxis.causq.com/downloads/android"
                 target="_blank"
                 rel="noopener noreferrer"
             >

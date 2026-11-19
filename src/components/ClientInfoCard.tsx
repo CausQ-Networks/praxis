@@ -22,12 +22,12 @@ import { InfoPopup } from "@app/components/ui/info-popup";
 type ClientInfoCardProps = {};
 
 const agentVersionMap: Record<string, string> = {
-    "Pangolin Windows": "windows",
-    "Pangolin Android": "android",
-    "Pangolin iOS": "ios",
-    "Pangolin iPadOS": "ios",
-    "Pangolin macOS": "mac",
-    "Pangolin CLI": "cli",
+    "Praxis Windows": "windows",
+    "Praxis Android": "android",
+    "Praxis iOS": "ios",
+    "Praxis iPadOS": "ios",
+    "Praxis macOS": "mac",
+    "Praxis CLI": "cli",
     "Olm CLI": "olm"
 };
 

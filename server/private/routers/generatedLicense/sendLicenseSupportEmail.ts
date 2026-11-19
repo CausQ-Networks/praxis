@@ -132,7 +132,7 @@ export async function sendLicenseSupportEmail(
                 }),
                 {
                     name: user.email,
-                    to: "support@pangolin.net",
+                    to: "support@causq.com",
                     replyTo: user.email,
                     from: config.getNoReplyEmail(),
                     subject: `Self-Hosted Support Request: ${subject}`

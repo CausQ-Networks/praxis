@@ -58,7 +58,7 @@ export default async function migration() {
             fs.writeFileSync(filePath, updatedYaml, "utf8");
         } catch (e) {
             console.log(
-                `Failed to add resource_session_request_param to config. Please add it manually. https://docs.pangolin.net/self-host/advanced/config-file`
+                `Failed to add resource_session_request_param to config. Please add it manually. https://docs.praxis.causq.com/self-host/advanced/config-file`
             );
             trx.rollback();
             return;
@@ -125,12 +125,12 @@ export default async function migration() {
             } else {
                 console.log(fromZodError(parsedConfig.error));
                 console.log(
-                    "We were unable to update the version of Badger in your Traefik configuration. Please update it manually to at least v1.0.0-beta.3. https://github.com/fosrl/badger"
+                    "We were unable to update the version of Badger in your Traefik configuration. Please update it manually to at least v1.0.0-beta.3. https://github.com/CausQ-Networks/praxis-badger"
                 );
             }
         } catch (e) {
             console.log(
-                "We were unable to update the version of Badger in your Traefik configuration. Please update it manually to at least v1.0.0-beta.3. https://github.com/fosrl/badger"
+                "We were unable to update the version of Badger in your Traefik configuration. Please update it manually to at least v1.0.0-beta.3. https://github.com/CausQ-Networks/praxis-badger"
             );
             trx.rollback();
             return;

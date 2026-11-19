@@ -386,7 +386,7 @@ export default function SitesTable({
                         // Without these fallbacks the badge renders with no label and
                         // no version at all.
                         const isCli = originalRow.agent === "cli";
-                        const agentLabel = isCli ? "Pangolin CLI" : "Newt";
+                        const agentLabel = isCli ? "Praxis CLI" : "Newt";
                         const displayedVersion =
                             originalRow.agentVersion ?? originalRow.newtVersion;
                         // CLI sites report their own version in agentVersion. Older
@@ -501,7 +501,7 @@ export default function SitesTable({
                             originalRow.exitNodeName.slice(1).toLowerCase();
                         return (
                             <Badge variant="secondary">
-                                Pangolin {capitalizedName}
+                                Praxis {capitalizedName}
                             </Badge>
                         );
                     }

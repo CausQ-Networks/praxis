@@ -56,7 +56,7 @@ export default async function migration() {
 experimental:
   plugins:
     badger:
-      moduleName: "github.com/fosrl/badger"
+      moduleName: "github.com/CausQ-Networks/praxis-badger"
       version: "v1.0.0-beta.2"
         */
 

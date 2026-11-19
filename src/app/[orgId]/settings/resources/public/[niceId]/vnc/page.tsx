@@ -215,7 +215,7 @@ function VncServerForm({
                                 sitesField="selectedSites"
                                 destinationField="destination"
                                 destinationPortField="destinationPort"
-                                learnMoreHref="https://docs.pangolin.net/manage/resources/public/vnc"
+                                learnMoreHref="https://docs.praxis.causq.com/manage/resources/public/vnc"
                                 defaultPort={5900}
                             />
                         </SettingsSectionForm>

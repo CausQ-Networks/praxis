@@ -554,7 +554,7 @@ export default function SignupForm({
                                                                 "signUpTerms.IAgreeToThe"
                                                             )}{" "}
                                                             <a
-                                                                href="https://pangolin.net/tos"
+                                                                href="https://praxis.causq.com/tos"
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="text-primary hover:underline"
@@ -567,7 +567,7 @@ export default function SignupForm({
                                                                 "signUpTerms.and"
                                                             )}{" "}
                                                             <a
-                                                                href="https://pangolin.net/privacy"
+                                                                href="https://praxis.causq.com/privacy"
                                                                 target="_blank"
                                                                 rel="noopener noreferrer"
                                                                 className="text-primary hover:underline"

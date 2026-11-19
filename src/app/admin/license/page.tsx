@@ -66,10 +66,10 @@ import { getLicenseLimitViolations } from "@app/lib/licenseLimits";
 import LicenseLimitsExceededBanner from "@app/components/LicenseLimitsExceededBanner";
 
 const ENTERPRISE_DOCS_URL =
-    "https://docs.pangolin.net/self-host/enterprise-edition";
-const ENTERPRISE_PRICING_URL = "https://pangolin.net/pricing#Self-Hosted";
+    "https://docs.praxis.causq.com/self-host/enterprise-edition";
+const ENTERPRISE_PRICING_URL = "https://praxis.causq.com/pricing#Self-Hosted";
 const LICENSE_PORTAL_URL =
-    "https://app.pangolin.net/auth/login?internal_redirect=/settings/license?generate";
+    "https://praxis.causq.com/auth/login?internal_redirect=/settings/license?generate";
 
 function getTierLabel(
     tier: LicenseKeyTier | undefined,

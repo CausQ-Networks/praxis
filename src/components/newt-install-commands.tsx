@@ -271,7 +271,7 @@ sudo rc-service pangolin-site start`
             Run: [
                 {
                     title: t("install"),
-                    link: `https://github.com/fosrl/cli/releases/latest/download/pangolin-cli_windows_installer.msi`
+                    link: `https://github.com/CausQ-Networks/praxis-cli/releases/latest/download/praxis-cli_windows_amd64.exe`
                 },
                 {
                     title: t("run"),
@@ -281,7 +281,7 @@ sudo rc-service pangolin-site start`
             Service: [
                 {
                     title: t("install"),
-                    link: `https://github.com/fosrl/cli/releases/latest/download/pangolin-cli_windows_installer.msi`
+                    link: `https://github.com/CausQ-Networks/praxis-cli/releases/latest/download/praxis-cli_windows_amd64.exe`
                 },
                 {
                     title: t("run"),
@@ -297,7 +297,7 @@ sudo rc-service pangolin-site start`
             "Docker Compose": [
                 `services:
   pangolin-site:
-    image: fosrl/pangolin-cli
+    image: causq-networks/praxis-cli
     container_name: pangolin-site
     restart: unless-stopped
     environment:
@@ -306,7 +306,7 @@ sudo rc-service pangolin-site start`
       - SITE_SECRET=${secret}${acceptClientsEnv}`
             ],
             "Docker Run": [
-                `docker run -dit --network host fosrl/pangolin-cli up site --id ${id} --secret ${secret} --endpoint ${endpoint}${acceptClientsFlag}`
+                `docker run -dit --network host causq-networks/praxis-cli up site --id ${id} --secret ${secret} --endpoint ${endpoint}${acceptClientsFlag}`
             ]
         },
         kubernetes: {
@@ -338,7 +338,7 @@ Description=Praxis Site Container
 
 [Container]
 ContainerName=pangolin-site
-Image=docker.io/fosrl/pangolin-cli
+Image=docker.io/causq-networks/praxis-cli
 Environment=PANGOLIN_ENDPOINT=${endpoint}
 Environment=SITE_ID=${id}
 Environment=SITE_SECRET=${secret}${!acceptClients ? "\nEnvironment=DISABLE_CLIENTS=true" : ""}
@@ -351,7 +351,7 @@ Restart=always
 WantedBy=default.target`
             ],
             "Podman Run": [
-                `podman run -dit docker.io/fosrl/pangolin-cli up site --id ${id} --secret ${secret} --endpoint ${endpoint}${acceptClientsFlag}`
+                `podman run -dit docker.io/causq-networks/praxis-cli up site --id ${id} --secret ${secret} --endpoint ${endpoint}${acceptClientsFlag}`
             ]
         },
         nixos: {
@@ -462,7 +462,7 @@ WantedBy=default.target`
                             {t.rich("siteInstallKubernetesDocsDescription", {
                                 docsLink: (chunks) => (
                                     <a
-                                        href="https://docs.pangolin.net/manage/sites/install-kubernetes"
+                                        href="https://docs.praxis.causq.com/manage/sites/install-kubernetes"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-primary hover:underline inline-flex items-center gap-1"
@@ -479,7 +479,7 @@ WantedBy=default.target`
                             {t.rich("siteInstallAdvantechDocsDescription", {
                                 docsLink: (chunks) => (
                                     <a
-                                        href="https://docs.pangolin.net/manage/sites/install-site"
+                                        href="https://docs.praxis.causq.com/manage/sites/install-site"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-primary hover:underline inline-flex items-center gap-1"

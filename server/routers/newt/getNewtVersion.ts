@@ -188,13 +188,13 @@ export async function getNewtVersion(
         const latestVersion = releaseInfo.version;
 
         // Binary names follow the release asset convention:
-        // newt_<platform>[.exe] and pangolin-cli_<platform>[.exe]
+        // newt_<platform>[.exe] and praxis-cli_<platform>[.exe]
         const binaryPrefix = isCli ? "pangolin-cli" : "newt";
         const binaryName = platform.includes("windows")
             ? `${binaryPrefix}_${platform}.exe`
             : `${binaryPrefix}_${platform}`;
 
-        const downloadUrl = `https://github.com/fosrl/${isCli ? "cli" : "newt"}/releases/download/${encodeURIComponent(latestVersion)}/${encodeURIComponent(binaryName)}`;
+        const downloadUrl = `https://github.com/CausQ-Networks/${isCli ? "praxis-cli" : "praxis-newt"}/releases/download/${encodeURIComponent(latestVersion)}/${encodeURIComponent(binaryName)}`;
 
         // SHA256 of this binary, from the release asset metadata of the
         // repo the binary is actually downloaded from.

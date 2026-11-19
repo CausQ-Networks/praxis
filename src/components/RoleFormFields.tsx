@@ -47,7 +47,7 @@ import { useFormContext, useWatch } from "react-hook-form";
 import { z } from "zod";
 
 export const ROLE_CLIENT_SETTINGS_DOCS_URL =
-    "https://docs.pangolin.net/manage/clients/server-side-settings";
+    "https://docs.praxis.causq.com/manage/clients/server-side-settings";
 
 export const SSH_SUDO_MODE_VALUES = ["none", "full", "commands"] as const;
 export type SshSudoMode = (typeof SSH_SUDO_MODE_VALUES)[number];

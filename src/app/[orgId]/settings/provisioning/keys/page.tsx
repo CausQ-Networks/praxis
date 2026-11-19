@@ -64,7 +64,7 @@ export default async function ProvisioningKeysPage(
                 description={t("provisioningKeysBannerDescription")}
             >
                 <Link
-                    href="https://docs.pangolin.net/manage/sites/install-site"
+                    href="https://docs.praxis.causq.com/manage/sites/install-site"
                     target="_blank"
                     rel="noopener noreferrer"
                 >

@@ -45,7 +45,7 @@ export function IdpGlobalModeBanner() {
                           adminPanelLink: adminPanelLinkRenderer,
                           configDocsLink: (chunks) => (
                               <Link
-                                  href="https://docs.pangolin.net/manage/identity-providers/add-an-idp#organization-identity-providers"
+                                  href="https://docs.praxis.causq.com/manage/identity-providers/add-an-idp#organization-identity-providers"
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="font-medium underline"
