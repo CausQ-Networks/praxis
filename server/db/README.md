@@ -1,6 +1,6 @@
 # Database
 
-Pangolin can use a Postgres or SQLite database to store its data.
+Praxis can use a Postgres or SQLite database to store its data.
 
 ## Development
 
