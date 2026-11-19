@@ -43,7 +43,7 @@ import { useEnvContext } from "@app/hooks/useEnvContext";
 import { toast } from "@app/hooks/useToast";
 import BrandingLogo from "@app/components/BrandingLogo";
 import BrandedAuthSurface from "@app/components/BrandedAuthSurface";
-import PoweredByPangolin from "@app/components/PoweredByPangolin";
+import PoweredByPraxis from "@app/components/PoweredByPraxis";
 import AuthPageFooterNotices from "@app/components/AuthPageFooterNotices";
 import { useTranslations } from "next-intl";
 import { build } from "@server/build";
@@ -369,7 +369,7 @@ export default function ResourceAuthPortal(props: ResourceAuthPortalProps) {
         <BrandedAuthSurface primaryColor={props.branding?.primaryColor}>
             {!accessDenied ? (
                 <div>
-                    <PoweredByPangolin />
+                    <PoweredByPraxis />
                     <Card>
                         <CardHeader>
                             {isUnlocked() &&

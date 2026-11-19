@@ -14,7 +14,7 @@ import {
 import { Button } from "@app/components/ui/button";
 import Link from "next/link";
 import { replacePlaceholder } from "@app/lib/replacePlaceholder";
-import PoweredByPangolin from "@app/components/PoweredByPangolin";
+import PoweredByPraxis from "@app/components/PoweredByPraxis";
 import BrandedAuthSurface from "@app/components/BrandedAuthSurface";
 import { getTranslations } from "next-intl/server";
 import { headers } from "next/headers";
@@ -59,7 +59,7 @@ export default async function OrgLoginPage({
 
     return (
         <BrandedAuthSurface primaryColor={branding?.primaryColor ?? null}>
-            <PoweredByPangolin />
+            <PoweredByPraxis />
             <Card className="w-full max-w-md">
                 <CardHeader>
                     {branding?.logoUrl && (

@@ -34,7 +34,7 @@ import {
 } from "@app/components/ui/card";
 import { Alert, AlertDescription } from "@app/components/ui/alert";
 import BrandedAuthSurface from "@app/components/BrandedAuthSurface";
-import PoweredByPangolin from "@app/components/PoweredByPangolin";
+import PoweredByPraxis from "@app/components/PoweredByPraxis";
 import AuthPageFooterNotices from "@app/components/AuthPageFooterNotices";
 import CollapsibleSessionToolbar from "@app/components/CollapsibleSessionToolbar";
 import { useTranslations } from "next-intl";
@@ -364,7 +364,7 @@ export default function RdpClient({
     if (error) {
         return (
             <BrandedAuthSurface primaryColor={primaryColor}>
-                <PoweredByPangolin />
+                <PoweredByPraxis />
                 <Card className="w-full">
                     <CardHeader>
                         <CardTitle>{t("rdpTitle")}</CardTitle>
@@ -383,7 +383,7 @@ export default function RdpClient({
         <>
             {showLogin && (
                 <BrandedAuthSurface primaryColor={primaryColor}>
-                    <PoweredByPangolin />
+                    <PoweredByPraxis />
                     <Card className="w-full">
                         <CardHeader>
                             <CardTitle>{t("rdpSignInTitle")}</CardTitle>

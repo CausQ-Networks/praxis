@@ -30,7 +30,7 @@ import { HorizontalTabs } from "@app/components/HorizontalTabs";
 import type { SignSshKeyResponse } from "@server/routers/ssh/types";
 import { useTranslations } from "next-intl";
 import BrandedAuthSurface from "@app/components/BrandedAuthSurface";
-import PoweredByPangolin from "@app/components/PoweredByPangolin";
+import PoweredByPraxis from "@app/components/PoweredByPraxis";
 import AuthPageFooterNotices from "@app/components/AuthPageFooterNotices";
 import {
     loadEncryptedLocalStorage,
@@ -473,7 +473,7 @@ export default function SshClient({
     if (error) {
         return (
             <BrandedAuthSurface primaryColor={primaryColor}>
-                <PoweredByPangolin />
+                <PoweredByPraxis />
                 <Card className="w-full">
                     <CardHeader>
                         <CardTitle>{t("sshTitle")}</CardTitle>
@@ -491,7 +491,7 @@ export default function SshClient({
     if (sessionClosedCode !== null) {
         return (
             <BrandedAuthSurface primaryColor={primaryColor}>
-                <PoweredByPangolin />
+                <PoweredByPraxis />
                 <Card className="w-full max-w-md">
                     <CardHeader>
                         <CardTitle>{t("sshTitle")}</CardTitle>
@@ -526,7 +526,7 @@ export default function SshClient({
         <>
             {!connected && (
                 <BrandedAuthSurface primaryColor={primaryColor}>
-                    <PoweredByPangolin />
+                    <PoweredByPraxis />
                     <Card className="w-full">
                         <CardHeader>
                             <CardTitle>{t("sshSignInTitle")}</CardTitle>
