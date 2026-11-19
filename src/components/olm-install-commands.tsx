@@ -12,6 +12,7 @@ import {
 } from "./Settings";
 import { Button } from "./ui/button";
 import { OptionSelect, type OptionSelectOption } from "./OptionSelect";
+import { useEnvContext } from "@app/hooks/useEnvContext";
 
 export type CommandItem =
     | string
@@ -34,6 +35,8 @@ export function OlmInstallCommands({
     endpoint
 }: OlmInstallCommandsProps) {
     const t = useTranslations();
+    const { env } = useEnvContext();
+    const staticBase = env.staticBaseUrl;
 
     const [platform, setPlatform] = useState<Platform>("unix");
     const [architecture, setArchitecture] = useState(
@@ -45,7 +48,7 @@ export function OlmInstallCommands({
             Run: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | sudo bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | sudo bash`
                 },
                 {
                     title: t("run"),
@@ -55,7 +58,7 @@ export function OlmInstallCommands({
             Service: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),

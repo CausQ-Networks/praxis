@@ -55,6 +55,7 @@ export function NewtSiteInstallCommands({
 }: NewtSiteInstallCommandsProps) {
     const t = useTranslations();
     const { env } = useEnvContext();
+    const staticBase = env.staticBaseUrl;
 
     const [acceptClients, setAcceptClients] = useState(true);
     const [allowPangolinSsh, setAllowPangolinSsh] = useState(
@@ -92,7 +93,7 @@ export function NewtSiteInstallCommands({
             Run: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),
@@ -102,7 +103,7 @@ export function NewtSiteInstallCommands({
             "Systemd Service": [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),
@@ -116,7 +117,7 @@ export function NewtSiteInstallCommands({
             "Manual Systemd Service": [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("envFile"),
@@ -143,7 +144,7 @@ sudo chmod 600 /etc/pangolin/pangolin-site.env`
                     title: t("serviceFile"),
                     command: `sudo tee /etc/systemd/system/pangolin-site.service > /dev/null << 'EOF'
 [Unit]
-Description=Pangolin Site
+Description=Praxis Site
 Wants=network-online.target
 After=network-online.target
 
@@ -174,7 +175,7 @@ sudo systemctl enable --now pangolin-site`
             Run: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),
@@ -184,7 +185,7 @@ sudo systemctl enable --now pangolin-site`
             "Manual OpenRC Service": [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("envFile"),
@@ -211,7 +212,7 @@ sudo chmod 600 /etc/conf.d/pangolin-site`
 #!/sbin/openrc-run
 
 name="pangolin-site"
-description="Pangolin Site"
+description="Praxis Site"
 
 command="/usr/local/bin/pangolin"
 command_args="up site"
@@ -244,7 +245,7 @@ sudo rc-service pangolin-site start`
             Run: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),
@@ -254,7 +255,7 @@ sudo rc-service pangolin-site start`
             Service: [
                 {
                     title: t("install"),
-                    command: `curl -fsSL https://static.pangolin.net/get-cli.sh | bash`
+                    command: `curl -fsSL ${staticBase}/get-cli.sh | bash`
                 },
                 {
                     title: t("run"),
@@ -333,7 +334,7 @@ sudo rc-service pangolin-site start`
         podman: {
             "Podman Quadlet": [
                 `[Unit]
-Description=Pangolin Site Container
+Description=Praxis Site Container
 
 [Container]
 ContainerName=pangolin-site
@@ -440,7 +441,7 @@ WantedBy=default.target`
                                                     checked as boolean;
                                                 setAllowPangolinSsh(value);
                                             }}
-                                            label="Allow Pangolin SSH"
+                                            label="Allow Praxis SSH"
                                         />
                                     </div>
                                     <p

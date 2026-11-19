@@ -27,6 +27,11 @@ export const configSchema = z
                     .pipe(z.url())
                     .transform((url) => url.toLowerCase())
                     .optional(),
+                static_base_url: z
+                    .url()
+                    .pipe(z.url())
+                    .transform((url) => url.replace(/\/$/, "").toLowerCase())
+                    .optional(),
                 log_level: z
                     .enum(["debug", "info", "warn", "error"])
                     .optional()

@@ -7,6 +7,8 @@ gerbil:
 
 app:
     dashboard_url: "https://{{.DashboardDomain}}"
+    # Installer/package CDN (GitHub Pages or Cloudflare). No trailing slash.
+    # static_base_url: "https://tufaylahmed.github.io/praxis"
     log_level: "info"
     telemetry:
         anonymous_usage: true

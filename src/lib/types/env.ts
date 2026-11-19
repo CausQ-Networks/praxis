@@ -4,6 +4,8 @@ export type Env = {
         sandbox_mode: boolean;
         version: string;
         dashboardUrl: string;
+        /** Base URL for installers/packages (GitHub Pages or Cloudflare). No trailing slash. */
+        staticBaseUrl: string;
         notifications: {
             product_updates: boolean;
             new_releases: boolean;

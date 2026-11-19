@@ -1,0 +1,11 @@
+# Cloudflare config for Praxis static CDN (Pages + optional R2)
+# Auth: wrangler login  OR  Cursor Cloudflare MCP in desktop IDE
+name = "praxis-static"
+compatibility_date = "2026-11-19"
+
+pages_build_output_dir = "static"
+
+# Optional R2 mirror (uncomment after: wrangler r2 bucket create praxis-static)
+# [[r2_buckets]]
+# binding = "STATIC"
+# bucket_name = "praxis-static"
