@@ -32,7 +32,7 @@ function PoweredByLabel({ brandName }: { brandName: string }) {
     );
 }
 
-export default function PoweredByPangolin() {
+export default function PoweredByPraxis() {
     const { env } = useEnvContext();
     const { isUnlocked } = useLicenseStatusContext();
 

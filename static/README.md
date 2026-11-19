@@ -2,7 +2,7 @@
 
 Public origin: **https://praxis.causq.com**
 
-Mirrors the role of `static.pangolin.net` using **Cloudflare** (Pages + Worker route) and **GitHub Pages** as backup.
+Mirrors the role of `praxis.causq.com` using **Cloudflare** (Pages + Worker route) and **GitHub Pages** as backup.
 
 ## Layout
 
@@ -47,4 +47,4 @@ PRAXIS_CLI_REPO=CausQ-Networks/praxis-cli PRAXIS_CLI_VERSION=0.21.0 curl -fsSL h
 
 ## npm packages
 
-To stop `npm install` hitting `static.pangolin.net/packages/…`, download the tarballs into `static/packages/`, point `package.json` at your `static_base_url`, and keep them in sync on Releases or R2.
+To stop `npm install` hitting `praxis.causq.com/packages/…`, download the tarballs into `static/packages/`, point `package.json` at your `static_base_url`, and keep them in sync on Releases or R2.
