@@ -1,0 +1,8 @@
+name = "praxis-docs-proxy"
+main = "worker.js"
+compatibility_date = "2026-11-19"
+workers_dev = true
+
+[[routes]]
+pattern = "docs.praxis.causq.com/*"
+zone_name = "causq.com"
