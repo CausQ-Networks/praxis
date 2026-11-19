@@ -55,3 +55,5 @@ drizzle.config.ts
 server/setup/migrations.ts
 solo.yml
 allowedDevOrigins.json
+# Local secrets
+API token
