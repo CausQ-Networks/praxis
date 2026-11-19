@@ -1,12 +1,21 @@
-# app.praxis.causq.com DNS
+# Praxis custom hostnames (Cloudflare DNS)
 
-Wrangler OAuth can attach Worker routes but cannot create zone DNS records.
+Wrangler OAuth can attach Worker routes but cannot create zone DNS records
+(`zone` scope is read-only). Add these CNAMEs in Cloudflare Dashboard →
+`causq.com` → DNS (Proxied):
 
-Add this in Cloudflare Dashboard → causq.com → DNS:
+| Type  | Name        | Content                                         |
+|-------|-------------|-------------------------------------------------|
+| CNAME | app.praxis  | praxis-app-proxy.tufaylahmed.workers.dev        |
+| CNAME | docs.praxis | praxis-docs-proxy.tufaylahmed.workers.dev       |
 
-| Type  | Name       | Content                                      | Proxy |
-|-------|------------|----------------------------------------------|-------|
-| CNAME | app.praxis | praxis-app-proxy.tufaylahmed.workers.dev     | Proxied |
+Until DNS exists:
 
-Until then, cloud landing is served at https://praxis.causq.com/ (Worker rewrite to `/app/`).
-CLI defaults to `https://praxis.causq.com`.
+- Cloud landing: https://praxis.causq.com/
+- Docs landing: https://praxis.causq.com/docs/
+- CLI installer: https://praxis.causq.com/get-cli.sh
+- Downloads: https://praxis.causq.com/downloads/
+- Workers.dev fallbacks work for app/docs proxies
+
+Or create an API token with `Zone.DNS Edit` for `causq.com` and export
+`CLOUDFLARE_API_TOKEN` so these records can be created automatically.
