@@ -1,6 +1,6 @@
 #!/bin/sh
 # Praxis CLI installer — hosted on GitHub Pages / Cloudflare (replaces static.pangolin.net/get-cli.sh)
-# Usage: curl -fsSL https://tufaylahmed.github.io/praxis/get-cli.sh | sh
+# Usage: curl -fsSL https://praxis-static.pages.dev/get-cli.sh | sh
 #
 # Binaries: GitHub Releases (default fosrl/cli until a Praxis CLI fork publishes assets).
 # Override: PRAXIS_CLI_REPO=owner/repo PRAXIS_CLI_VERSION=1.2.3

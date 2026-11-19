@@ -14,13 +14,13 @@ Mirrors the role of `static.pangolin.net` using **GitHub** (Pages + Releases) an
 
 1. In the repo: **Settings → Pages → Build and deployment → GitHub Actions**.
 2. Push to `main` (workflow `.github/workflows/deploy-static.yml`).
-3. Public URL: `https://tufaylahmed.github.io/praxis/get-cli.sh`
+3. Public URL: `https://tufaylahmed.github.io/praxis/get-cli.sh` (backup origin)
 
 Set in `config/config.yml`:
 
 ```yaml
 app:
-  static_base_url: "https://tufaylahmed.github.io/praxis"
+  static_base_url: "https://praxis-static.pages.dev"
 ```
 
 ## Cloudflare (custom domain + edge CDN)

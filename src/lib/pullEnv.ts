@@ -25,7 +25,7 @@ export function pullEnv(): Env {
             version: process.env.APP_VERSION as string,
             dashboardUrl: process.env.DASHBOARD_URL as string,
             staticBaseUrl: (process.env.STATIC_BASE_URL ||
-                "https://tufaylahmed.github.io/praxis") as string,
+                "https://praxis-static.pages.dev") as string,
             notifications: {
                 product_updates:
                     process.env.PRODUCT_UPDATES_NOTIFICATION_ENABLED === "true"
